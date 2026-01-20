@@ -1,57 +1,254 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B13_A02</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment - 02</title>
 
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">  
+    <!-- font-awesome-cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar section -->
+      <nav class="navbar container-size">
+        <div class="nav-logo">
+          <h2>
+            <span class="color-white">Tech</span
+            ><span class="color-linear">Wave</span>
+          </h2>
+        </div>
 
-</head>
+        <ul class="menu-items">
+          <li><a href="">About</a></li>
+          <li><a href="">Episodes</a></li>
+          <li><a href="">Host</a></li>
+        </ul>
 
-<body class="inter-font">
-   <header>
-       <nav>
-           <div class="logo">
-               <h2>Tech<span class="color-purple">Wave</span></h2>
-           </div>
-           <ul class="menu">
-               <li><a href=""></a>About</li>
-               <li><a href=""></a>Episodes</li>
-               <li><a href=""></a>Host</li>
-               <li><button class="btn">Subscribe <i class="fa-solid fa-arrow-right"></i></button></li>
-           </ul>
-       </nav>
-       <section id="banner">
-           <div class="banner-content">
-              <div class="grid-container">
-                 <div class="card">
-                     <img src="./assets/footer-bg.png" alt="">
-                 </div>
-                 <div class="card">
-                     <img src="./assets/hero-circle.png" alt="">
-                 </div>
-                 <div class="card">
-                     <img src="./assets/footer-bg.png" alt="">
-                 </div>
+        <div class="my-button">
+          <button class="btn-1">
+            Subscribe<span><img src="./assets/Vector.png" alt="" /></span>
+          </button>
+        </div>
+
+        <span id="nav-bars-icon">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Banner section -->
+      <section class="hero">
+        <div class="hero-container">
+          <div class="hero-circle">
+            <img src="./assets/microphone.png" alt="" />
+            <span class="badge">NEW</span>
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <h2>TechWave</h2>
+          <p>
+            Your daily dose of tech insights, productivity hacks, and personal
+            growth
+          </p>
+
+          <div class="hero-buttons">
+            <button class="btn-1">
+              <span><img src="./assets/spotify.png" alt="" /></span>
+              Listen on Spotify
+            </button>
+            <button class="btn-2">
+              <span><img src="./assets/message.png" alt="" /></span>
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+
+      <section class="about-section">
+        <div class="about container-size">
+          <div class="about-content">
+            <h2>About the Podcast</h2>
+            <p>
+              TechWave is your go-to podcast for staying ahead in the fast-paced
+              world of technology. <br />
+              We break down complex topics into digestible insights, explore
+              productivity strategies that actually work, <br />
+              and share stories of personal growth from industry leaders.
+              <br />
+              <br />Join thousands of young professionals and tech enthusiasts
+              who start their day with TechWave.
+            </p>
+          </div>
+
+          <hr />
+
+          <div class="about-item">
+            <div class="statistics-items">
+              <h2>150K+</h2>
+              <p>MONTHLY LISTENERS</p>
+            </div>
+
+            <div class="statistics-items">
+              <h2>200+</h2>
+              <p>EPISODES PUBLISHED</p>
+            </div>
+
+            <div class="statistics-items">
+              <h2>
+                4.9
+                <span class="about-star"><i class="fa-solid fa-star"></i></span>
+              </h2>
+              <p>AVERAGE RATING</p>
+            </div>
+
+            <div class="statistics-items">
+              <h2>50+</h2>
+              <p>INDUSTRY EXPERTS</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why-Choose-TechWave-section -->
+
+      <section class="why-choose-section">
+        <div class="why-techwave container-size">
+          <h2>Why Choose TechWave</h2>
+
+          <div class="grid-container">
+            <div class="card-big audio">
+              <img src="./assets/headphone.png" alt="" />
+              <h4>Premium Audio Quality</h4>
+              <p>
+                Experience crystal-clear sound with professional-grade recording
+                equipment and expert audio engineering. Every episode is
+                mastered for optimal listening across all devices and platforms.
+              </p>
+            </div>
+
+            <div class="card mobile">
+              <img src="./assets/device.png" alt="" />
+              <h4>Mobile Friendly</h4>
+              <p>
+                Listen on the go with seamless mobile experience and offline
+                downloads.
+              </p>
+            </div>
+
+            <div class="card global">
+              <img src="./assets/location.png" alt="" />
+              <h4>Global Community</h4>
+              <p>
+                Connect with tech enthusiasts from over 120 countries worldwide.
+              </p>
+            </div>
+
+            <div class="card interview">
+              <img src="./assets/interview.png" alt="" />
+              <h4>Exclusive Interviews</h4>
+              <p>
+                Get unprecedented access to industry titans, startup founders,
+                and tech visionaries. Our host secures exclusive conversations
+                you won't find anywhere else, diving deep into their journeys,
+                failures, and success strategies.
+              </p>
+            </div>
+
+            <div class="card resource">
+              <img src="./assets/resource.png" alt="" />
+              <h4>Rich Resources</h4>
+              <p>
+                Access show notes, transcripts, and additional learning
+                materials for every episode.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Episode -->
+
+      <section class="featured-section">
+        <div class="feature container-size">
+          <h2 class="feature-title">Featured Episodes</h2>
+
+          <div class="feature-container">
+            <div class="feature-card">
+              <div class="video-link">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/bZdWxhd1O_A?si=dFmvkNbTXfM8w9-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
-              <div class="section-heading">
-                  <h1>TechWave</h1>
-                  <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
-                  <div class="btn-group">
-                    <button class="btn"><i class="fa-regular fa-circle-play"></i> Listen on Spotify</button>
-                    <button class="btn"><i class="fa-regular fa-envelope"></i> Subscribe</button>
-                  </div>
 
+              <div class="feature-content">
+                <h3>Learn About Hunting Fish</h3>
+
+                <p>
+                  Exploring how artificial intelligence is transforming our
+                  daily routines and what to expect in the next decade.
+                </p>
+
+                <div class="duration">
+                  <img src="./assets/clock.png" alt="" />
+                  <span>42 min</span>
+                </div>
               </div>
-              
-           </div>  
-       </section>
-   </header>
-</body>
+            </div>
+
+            <div class="feature-card">
+              <div class="video-link">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Cxf5sOXG0w0?si=0RDt6YacgELvPHmW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+
+              <div class="feature-content">
+                <h3>Web Development Complete Course</h3>
+
+                <p>
+                  Practical strategies for staying productive and maintaining
+                  work-life balance in a remote environment.
+                </p>
+
+                <div class="duration">
+                  <img src="./assets/clock.png" alt="" />
+                  <span>35 min</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="video-link">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/nlV0byZxMWE?si=gSG6lEV0pZMmYZf6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+
+              <div class="feature-content">
+                <h3>Most Beautiful Campus in Bangladesh</h3>
+
+                <p>
+                  Expert advice on navigating your tech career from junior
+                  developer to senior leadership roles.
+                </p>
+
+                <div class="duration">
+                  <img src="./assets/clock.png" alt="" />
+                  <span>51 min</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+    </main>
+
+  </body>
 </html>
